@@ -1,0 +1,2 @@
+class FavouriteField < ApplicationRecord
+end
