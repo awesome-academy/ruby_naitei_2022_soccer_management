@@ -15,7 +15,7 @@ default: &default
   pool: 
   username:
   password:
-  socket: /tmp/mysql.sock
+  socket: 
 
 development:
   <<: *default
