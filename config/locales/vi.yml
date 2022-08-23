@@ -31,9 +31,11 @@ vi:
       vietnamese: "Tiếng việt"
       home: "Trang chủ"
       help: "Trợ giúp"
-      users: "Người dùng"
       login: "Đăng nhập"
       soccer_fields: "Sân bóng"
+      logout: "Đăng xuất"
+      signup: "Đăng ký"
+      account: "Tài khoản"
   static_pages:
     home:
       home: "Trang chủ"
@@ -51,8 +53,19 @@ vi:
     show:
       user_not_found: "Không tìm thấy người dùng"
     create:
-      signup_success: "Chào mừng đến với Ứng dụng quản lý sân bóng!"
-      signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
+      users_unsuccess: "Đăng ký không thành công"
+      mail_notice: "Hãy kiểm tra mail để  hoàn tất đăng ký"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      signup: "Đăng ký ngay!"
+      new_user: "Người dùng mới? "
+      remember_me: "Nhớ tôi trên máy tính này"
+    create:
+      invalid_email_password_combination: "Email và password không trùng khớp"
+      account_not_actived: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để biết liên kết kích hoạt."
   shared:
     error_messages:
       intro: "Biểu mẫu có"
@@ -60,3 +73,13 @@ vi:
     soccer_field_error_messages:
       contains: "Biểu mẫu bao gồm"
       error: "lỗi"
+  account_activations:
+    edit:
+      user_success: "Tài khoản đã được kích hoạt"
+      user_unsuccess: "Kích họat không hợp lệ"
+  user_mailer:
+    account_activation:
+      account_activation: "Kích hoạt tài khoản"
+      welcome_to: "Chào mừng bạn đến với Soccer Field Manager, click vào link bên dưới để kích hoạt tài khoản"
+      activate: "Kích hoạt"
+      hi: "Chào"
