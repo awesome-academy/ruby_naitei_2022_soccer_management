@@ -1,0 +1,20 @@
+vi:
+  admin:
+    static_pages:
+      home:
+        home: "Trang chủ"
+      help:
+        help: "Trợ giúp"
+  layouts:
+    header:
+      english: "Tiếng anh"
+      vietnamese: "Tiếng việt"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      users: "Người dùng"
+      login: "Đăng nhập"
+  static_pages:
+    home:
+      home: "Trang chủ"
+    help:
+      help: "Trợ giúp"
