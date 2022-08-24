@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :users
     resources :account_activations, only: :edit
     resources :soccer_fields, only: %i(index show)
+    resources :soccer_field_orders
     namespace :admin do
       root to: "static_pages#home"
       get "/home", to: "static_pages#home"

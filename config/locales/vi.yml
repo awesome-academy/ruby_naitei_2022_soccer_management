@@ -153,7 +153,31 @@ vi:
   soccer_fields:
     show:
       not_found: "Không tìm thấy người dùng"
+      detail: "Chi tiết"
+      order_form: "Đặt sân"
+      login_require: "Làm ơn đăng nhập"
+      ordered: "Đã đặt"
+    index:
+      name: "Tên"
+      address: "Địa chỉ"
+      filter: "Lọc"
   models:
     soccer_field:
       valid_format: "cần phải đúng định dạng hình ảnh"
       should_less_than: "cần nhỏ hơn 5MB"
+  soccer_field_orders:
+    create:
+      success: "Tạo thành công"
+      error: "Tạo không thành công"
+    index:
+      time_start: "Thời gian bắt đầu"
+      time_finish: "Thời gian kết thúc"
+      submit: "Đăng kí"
+    validate:
+      start_time: "Thời gian bắt đầu chưa hợp lệ"
+      finish_time: "Thời gian kết thúc chưa hợp lệ"
+    new:
+      time_start: "Thời gian bắt đầu"
+      time_finish: "Thời gian kết thúc"
+      submit: "Đặt"
+      confirm: "Bạn có chắc muốn đặt không?"

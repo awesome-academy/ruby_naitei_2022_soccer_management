@@ -26,5 +26,23 @@ soccer_field:
   price_step: 10000
   price_default: 200000
   field_type: [5, 7, 9, 11]
-  name_max_length: 50
-  address_max_length: 150
+soccer_field_order:
+  day_min: 1
+  day_step: 1
+  hour_min: 0
+  hour_max: 23
+  hour_step: 1
+  minute_min: 0
+  minute_max: 59
+  minute_step: 15
+  minute_default: 0
+  rent_time_min: 1
+  rent_time_max: 4
+  rent_time_step: 1
+  rent_time_default: 1
+
+
+validates:
+  soccer_field:
+    name_max_length: 50
+    address_max_length: 150

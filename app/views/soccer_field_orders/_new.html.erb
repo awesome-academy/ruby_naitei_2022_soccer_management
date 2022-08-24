@@ -1,0 +1,11 @@
+<%= form_for(soccer_field_order) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <%= f.hidden_field :soccer_field_id, value: soccer_field_order.soccer_field_id %>
+  <%= f.label :time_start_picker, t(".time_start") %>
+  <%= f.text_field :time_start_picker, class: "search-form" %>
+  <%= f.label :time_finish_picker, t(".time_finish") %>
+  <%= f.text_field :time_finish_picker, class: "search-form" %>
+  <%= f.submit t(".submit"), class: "btn btn-primary", data: {
+    confirm: t(".confirm")
+    } %>
+<% end %>
