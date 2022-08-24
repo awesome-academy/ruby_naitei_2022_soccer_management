@@ -1,1 +1,6 @@
 bg_img_link: "soccer_field.jpg"
+image:
+  avatar:
+    size: 50
+pagy:
+  soccer_fields: 10

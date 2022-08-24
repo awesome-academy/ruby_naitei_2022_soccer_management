@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_22_092508) do
+ActiveRecord::Schema.define(version: 2022_08_23_035552) do
 
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "review_id"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2022_08_22_092508) do
   create_table "soccer_fields", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "address"
-    t.integer "type"
+    t.integer "field_type"
     t.integer "rate"
     t.bigint "hour_price"
     t.datetime "created_at", precision: 6, null: false
