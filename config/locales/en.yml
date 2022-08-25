@@ -13,6 +13,7 @@ en:
       help: "Help"
       users: "Users"
       login: "Log in"
+      soccer_fields: "Soccer Fields"
   static_pages:
     home:
       home: "Home"

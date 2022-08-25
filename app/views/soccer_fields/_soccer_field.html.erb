@@ -1,0 +1,7 @@
+<li id="soccer_field-<%= soccer_field.id %>">
+  <%= link_to gravatar_for(soccer_field, size: Settings.image.avatar.size), soccer_field %>
+  <span class="name"><%= link_to soccer_field.name, soccer_fields_path %></span>
+  <div class="content">
+    <%= soccer_field.address %>
+  </div>
+</li>

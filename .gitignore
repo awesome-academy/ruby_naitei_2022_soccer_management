@@ -82,3 +82,5 @@ config/environments/*.local.yml
 
 .framgia-ci-reports/
 .framgia-ci-result.temp.yml
+
+.vscode
