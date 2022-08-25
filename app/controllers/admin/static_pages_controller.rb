@@ -1,4 +1,4 @@
-class Admin::StaticPagesController < ApplicationController
+class Admin::StaticPagesController < Admin::BaseController
   def home; end
 
   def help; end

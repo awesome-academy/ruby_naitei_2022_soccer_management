@@ -19,6 +19,5 @@ soccer_field:
   price_step: 10000
   price_default: 200000
   field_type: [5, 7, 9, 11]
-validates:
   name_max_length: 50
   address_max_length: 150
