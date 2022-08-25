@@ -1,5 +1,21 @@
 en:
   admin:
+    layouts:
+      header:
+        english: "English"
+        vietnamese: "Vietnamese"
+        home: "Home"
+        help: "Help"
+        users: "Users"
+        login: "Log in"
+        soccer_fields: "Soccer Fields"
+      sidebar:
+        create_field: "Create new soccer field"
+        manage_orders: "Manage orders"
+      footer:
+        anything: "Anything you want"
+        copyright: "Copyright"
+        all_rights: "All rights reserved."
     static_pages:
       home:
         home: "Home"

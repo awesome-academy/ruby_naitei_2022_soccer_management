@@ -1,5 +1,21 @@
 vi:
   admin:
+    layouts:
+      header:
+        english: "Tiếng anh"
+        vietnamese: "Tiếng việt"
+        home: "Trang chủ"
+        help: "Trợ giúp"
+        users: "Người dùng"
+        login: "Đăng nhập"
+        soccer_fields: "Sân bóng"
+      sidebar:
+        create_field: "Tạo sân bóng mới"
+        manage_orders: "Quản lý đơn đặt sân"
+      footer:
+        anything: "Mọi thứ bạn muốn"
+        copyright: "Bản quyền"
+        all_rights: "Đã đăng ký Bản quyền."
     static_pages:
       home:
         home: "Trang chủ"
