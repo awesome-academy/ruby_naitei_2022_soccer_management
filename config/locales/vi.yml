@@ -3,8 +3,28 @@ vi:
     static_pages:
       home:
         home: "Trang chủ"
+        welcome: "Chào mừng tới Soccer Field"
+        create_button: "Tạo sân bóng mới"
       help:
         help: "Trợ giúp"
+    soccer_fields:
+      new:
+        title: "Tạo sân bóng mới"
+        name: "Tên"
+        address: "Địa chỉ"
+        field_type: "Loại sân"
+        rate: "Đánh giá"
+        hour_price: "Giá theo giờ"
+        create_button: "Tạo sân"
+        5-a-side: "5 người"
+        7-a-side: "7 người"
+        9-a-side: "9 người"
+        11-a-side: "11 người"
+      create:
+        success: "Tạo sân bóng mới thành công!"
+        failed: "Tạo sân bóng mới không thành công!"
+      show:
+        not_found: "Không tìm thấy sân bóng"
   layouts:
     header:
       english: "Tiếng anh"
@@ -37,3 +57,6 @@ vi:
     error_messages:
       intro: "Biểu mẫu có"
       error: "Lỗi"
+    soccer_field_error_messages:
+      contains: "Biểu mẫu bao gồm"
+      error: "lỗi"

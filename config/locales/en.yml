@@ -3,8 +3,28 @@ en:
     static_pages:
       home:
         home: "Home"
+        welcome: "Welcome to Soccer Field"
+        create_button: "Create new soccer field"
       help:
         help: "Help"
+    soccer_fields:
+      new:
+        title: "Create new soccer field"
+        name: "Name"
+        address: "Address"
+        field_type: "Field type"
+        rate: "Rate"
+        hour_price: "Hour price"
+        create_button: "Create soccer field"
+        5-a-side: "5-a-side"
+        7-a-side: "7-a-side"
+        9-a-side: "9-a-side"
+        11-a-side: "11-a-side"
+      create:
+        success: "Created soccer field successfully!"
+        failed: "Failed to create soccer field"
+      show:
+        not_found: "Not found soccer field"
   layouts:
     header:
       english: "English"
@@ -37,3 +57,6 @@ en:
     error_messages:
       intro: "The form contains"
       error: "Error"
+    soccer_field_error_messages:
+      contains: "The form contains"
+      error: "error"

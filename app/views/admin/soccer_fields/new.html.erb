@@ -1,0 +1,24 @@
+<% provide :title, t(".title") %>
+<h1><%= t(".title") %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @soccer_field, url: admin_soccer_fields_path do |f| %>
+      <%= render "shared/soccer_field_error_messages" %>
+      <%= f.label :name, t(".name") %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label :address, t(".address") %>
+      <%= f.text_field :address, class: "form-control" %>
+      <%= f.label :field_type, t(".field_type") %>
+      <%= f.select :field_type, field_type, class: "form-control" %>
+      <%= f.label :rate, t(".rate") %>
+      <%= f.number_field :rate, in: Settings.soccer_field.rate_range,
+                                step: Settings.soccer_field.rate_step,
+                                :value => Settings.soccer_field.rate_default, class: "form-control" %>
+      <%= f.label :hour_price, t(".hour_price")%>
+      <%= f.number_field :hour_price, in: Settings.soccer_field.price_range,
+                                      step: Settings.soccer_field.price_step,
+                                      :value => Settings.soccer_field.price_default, class: "form-control" %>
+      <%= f.submit t(".create_button"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
