@@ -2,46 +2,6 @@
 @import "bootstrap";
 @import "color";
 
-@mixin box_sizing {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* forms */
-input,
-textarea,
-select,
-.uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
-  @include box_sizing;
-}
-
-input {
-  height: auto !important;
-}
-
-/* error */
-
-#error_explanation {
-  color: red;
-
-  ul {
-    color: red;
-    margin: 0 0 30px 0;
-  }
-}
-
-.field_with_errors {
-  @extend .has-error;
-
-  .form-control {
-    color: red;
-  }
-}
-
 /* universal */
 
 body {
@@ -110,6 +70,7 @@ p {
 }
 
 .soccer_field {
+  position: relative;
   width: 100%;
   height: 100vh;
   margin-top: -10px;
@@ -139,5 +100,62 @@ p {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
+  }
+}
+
+.fix-position {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 130px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.welcome {
+  color: $aliceblue;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.btn-create {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* mixins, variables, etc. */
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid $shade-gray;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: $red;
+  ul {
+  color: $red;
+  margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
   }
 }

@@ -1,2 +1,6 @@
 <% provide :title, t(".home") %>
 <%= image_tag Settings.bg_img_link, class: "soccer_field" %>
+<div class="center fix-position">
+  <h1 class="welcome"><%= t(".welcome") %></h1>
+  <%= link_to t(".create_button"), new_admin_soccer_field_path, class: "btn btn-lg btn-primary btn-create" %>
+</div>

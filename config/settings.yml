@@ -11,3 +11,14 @@ valid:
   email_max_len: 255
   password_min_len: 6
   password_max_len: 20
+soccer_field:
+  rate_range: [1..5]
+  rate_step: 0.5
+  rate_default: 3
+  price_range: [200000..400000]
+  price_step: 10000
+  price_default: 200000
+  field_type: [5, 7, 9, 11]
+validates:
+  name_max_length: 50
+  address_max_length: 150

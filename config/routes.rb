@@ -7,8 +7,10 @@ Rails.application.routes.draw do
     resources :users, only: %i(new create show)
     resources :soccer_fields, only: %i(index show)
     namespace :admin do
+      root to: "static_pages#home"
       get "static_pages/home"
       get "static_pages/help"
+      resources :soccer_fields
     end
   end
 end
