@@ -19,3 +19,21 @@ en:
       home: "Home"
     help:
       help: "Help"
+  users:
+    new:
+      heading: "Sign up"
+      form:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirm: "Password confirmation"
+        create: "Create my account"
+    show:
+      user_not_found: "User not found"
+    create:
+      signup_success: "Wellcome to the Soccer management"
+      signup_fail: "Errors occurred. Please try again."
+  shared:
+    error_messages:
+      intro: "The form contains"
+      error: "Error"

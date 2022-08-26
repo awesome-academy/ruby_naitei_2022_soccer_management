@@ -19,3 +19,21 @@ vi:
       home: "Trang chủ"
     help:
       help: "Trợ giúp"
+  users:
+    new:
+      heading: "Đăng ký"
+      form:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirm: "Xác nhận mật khẩu"
+        create: "Tạo tài khoản"
+    show:
+      user_not_found: "Không tìm thấy người dùng"
+    create:
+      signup_success: "Chào mừng đến với Ứng dụng quản lý sân bóng!"
+      signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
+  shared:
+    error_messages:
+      intro: "Biểu mẫu có"
+      error: "Lỗi"
