@@ -4,7 +4,11 @@ Rails.application.routes.draw do
     get "/help", to: "static_pages#help"
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
-    resources :users, only: %i(new create show)
+    post "/login", to: "sessions#create"
+    get "/login", to: "sessions#new"
+    delete "/logout", to: "sessions#destroy"
+    resources :users
+    resources :account_activations, only: :edit
     resources :soccer_fields, only: %i(index show)
     namespace :admin do
       root to: "static_pages#home"

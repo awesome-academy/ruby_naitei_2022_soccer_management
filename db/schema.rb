@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_26_083907) do
+ActiveRecord::Schema.define(version: 2022_08_29_025219) do
 
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "review_id"
@@ -54,9 +54,6 @@ ActiveRecord::Schema.define(version: 2022_08_26_083907) do
     t.bigint "hour_price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["address"], name: "index_soccer_fields_on_address"
-    t.index ["field_type"], name: "index_soccer_fields_on_field_type"
-    t.index ["name"], name: "index_soccer_fields_on_name"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -66,6 +63,10 @@ ActiveRecord::Schema.define(version: 2022_08_26_083907) do
     t.string "token_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "remember_digest"
+    t.string "activation_digest"
+    t.boolean "activated"
+    t.datetime "activated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

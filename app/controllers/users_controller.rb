@@ -14,13 +14,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "welcome"
-      redirect_to @user
+      @user.send_mail_activate
+      flash[:infor] = t ".mail_notice"
+      redirect_to root_path
     else
-      flash[:error] = t "signup_fail"
+      flash[:danger] = t ".user_unsuccess"
       render :new
     end
   end
+
+  def edit; end
 
   private
   def user_params
