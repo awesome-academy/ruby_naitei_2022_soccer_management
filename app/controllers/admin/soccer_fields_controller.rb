@@ -1,4 +1,4 @@
-class Admin::SoccerFieldsController < ApplicationController
+class Admin::SoccerFieldsController < Admin::BaseController
   def new
     @soccer_field = SoccerField.new
   end
