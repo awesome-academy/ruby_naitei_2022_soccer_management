@@ -99,3 +99,8 @@ vi:
       welcome_to: "Chào mừng bạn đến với Soccer Field Manager, click vào link bên dưới để kích hoạt tài khoản"
       activate: "Kích hoạt"
       hi: "Chào"
+  soccer_fields:
+    index:
+      name: "Tên"
+      address: "Địa chỉ"
+      filter: "Lọc"

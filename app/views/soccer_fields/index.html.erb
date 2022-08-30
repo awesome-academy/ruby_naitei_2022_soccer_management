@@ -1,3 +1,10 @@
+<%= form_with url: soccer_fields_path, method: :get, html: {id: "form-search"} do |f| %>
+  <%= f.label :name, t(".name") %>
+  <%= f.text_field :name, class: "search-form" %>
+  <%= f.label :address, t(".address") %>
+  <%= f.text_field :address, class: "search-form" %>
+  <%= f.submit t(".filter"), class: "btn btn-primary" %>
+<% end %>
 <ol class="soccer_fields">
   <%= render @soccer_fields %>
 </ol>

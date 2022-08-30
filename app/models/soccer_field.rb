@@ -7,4 +7,6 @@ class SoccerField < ApplicationRecord
 
   validates :field_type, :hour_price, presence: true,
                                       numericality: {only_integer: true}
+  scope :search_name, ->(name){where("name LIKE ?", "%#{name}%")}
+  scope :search_address, ->(address){where("address LIKE ?", "%#{address}%")}
 end
