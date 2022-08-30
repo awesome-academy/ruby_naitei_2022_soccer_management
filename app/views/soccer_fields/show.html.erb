@@ -1,0 +1,15 @@
+<div class="container site-section">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="custom-media d-flex">
+            <div class="mr-4">
+              <%= link_to gravatar_for(@soccer_field, size: Settings.image.soccer_field.size), soccer_field_path %>
+            </div>
+            <div class="text">
+              <h3><%= link_to @soccer_field.name, soccer_field_path %></h3>
+              <p><%= @soccer_field.address %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
