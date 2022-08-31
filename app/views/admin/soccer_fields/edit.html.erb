@@ -1,8 +1,8 @@
 <% provide :title, t(".title") %>
-<h1><%= t(".title") %></h1>
+<h1><%= t ".title" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for @soccer_field, url: admin_soccer_fields_path do |f| %>
+    <%= form_for @soccer_field, url: admin_soccer_field_path do |f| %>
       <%= render "shared/soccer_field_error_messages" %>
       <%= f.label :name, t(".name") %>
       <%= f.text_field :name, class: "form-control" %>
@@ -19,8 +19,14 @@
                                       step: Settings.soccer_field.price_step,
                                       :value => Settings.soccer_field.price_default, class: "form-control" %>
       <%= f.label :image, t(".image") %>
-      <%= f.file_field :image, accept: Settings.image.accept_path, class: "form-control" %>
-      <%= f.submit t(".create_button"), class: "btn btn-primary" %>
+      <% if f.object.image.to_s.empty? %>
+        <%= f.file_field :image, accept: Settings.image.accept_path, class: "form-control" %>
+      <% else %>
+        <%= image_tag @soccer_field.display_preview_image, class: "d-block"%>
+        <%= t ".replace" %>
+        <%= f.file_field :image, accept: Settings.image.accept_path, class: "form-control" %>
+      <% end %>
+      <%= f.submit t(".save_button"), class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>

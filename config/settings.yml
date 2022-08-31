@@ -4,6 +4,11 @@ image:
     size: 50
   soccer_field:
     size: 100
+  type: ["image/jpeg", "image/gif", "image/png"]
+  size: 5
+  resize_to_limit: [500, 500]
+  resize_to_limit_preview: [200, 100]
+  accept_path: "image/jpeg, image/gif, image/png"
 pagy:
   soccer_fields: 10
 regex:

@@ -1,4 +1,6 @@
 en:
+  delete: "delete"
+  you_sure: "You sure?"
   admin:
     layouts:
       header:
@@ -31,6 +33,7 @@ en:
         field_type: "Field type"
         rate: "Rate"
         hour_price: "Hour price"
+        image: "Image"
         create_button: "Create soccer field"
         5-a-side: "5-a-side"
         7-a-side: "7-a-side"
@@ -41,6 +44,38 @@ en:
         failed: "Failed to create soccer field"
       show:
         not_found: "Not found soccer field"
+      update:
+        success: "Updated successfully"
+        failed: "Update failed"
+      destroy:
+        success: "Deleted successfully"
+        failed: "Delete failed"
+      edit:
+        title: "Edit"
+        name: "Name"
+        address: "Address"
+        field_type: "Field type"
+        rate: "Rate"
+        hour_price: "Hour price"
+        image: "Image"
+        save_button: "Save changes"
+        5-a-side: "5-a-side"
+        7-a-side: "7-a-side"
+        9-a-side: "9-a-side"
+        11-a-side: "11-a-side"
+        replace: "Click below to replace this file."
+      show:
+        title: "Soccer Field Detail"
+        address: "Address"
+        type: "Type"
+        rate: "Rate"
+        hour_price: "Hour price"
+        a-side: "-a-side"
+        edit_button: "Edit"
+        delete_button: "Delete"
+        you_sure: "You sure?"
+      index:
+        title: "List of soccer fields"
   layouts:
     header:
       english: "English"
@@ -102,3 +137,7 @@ en:
   soccer_fields:
     show:
       not_found: "Not found user"
+  models:
+    soccer_field:
+      valid_format: "must be a valid image format"
+      should_less_than: "should be less than 5MB"
