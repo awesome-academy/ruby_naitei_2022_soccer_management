@@ -99,3 +99,6 @@ en:
       welcome_to: "Welcome to the Soccer Field Manager! Click on the link below to activate your account:"
       activate: "Activate"
       hi: "Hi"
+  soccer_fields:
+    show:
+      not_found: "Not found user"

@@ -2,6 +2,8 @@ bg_img_link: "soccer_field.jpg"
 image:
   avatar:
     size: 50
+  soccer_field:
+    size: 100
 pagy:
   soccer_fields: 10
 regex:
