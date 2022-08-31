@@ -1,1 +1,21 @@
-<%= @soccer_field.name %>, <%= @soccer_field.address %>
+<% provide :title, t(".title") %>
+<h1><%= t ".title" %></h1>
+<div class="row align-items-center">
+  <div class="col-lg-5 ml-auto">
+    <h1 class="text-white"><%= @soccer_field.name %></h1>
+    <p><strong><%= t ".address" %>:</strong> <%= @soccer_field.address %></p>
+    <p><strong><%= t ".type" %>:</strong> <%= @soccer_field.field_type %> <%= t ".a-side" %></p>
+    <p><strong><%= t ".rate" %>:</strong> <%= @soccer_field.rate %></p>
+    <p><strong><%= t ".hour_price" %>:</strong> <%= @soccer_field.hour_price %>VND</p>
+    <div id="date-countdown"></div>
+    <p class="center mt-50">
+      <%= link_to t(".edit_button"), edit_admin_soccer_field_path(@soccer_field), class: "btn btn-primary py-3 px-4 mr-3" %>
+      <%= link_to t(".delete_button"), admin_soccer_field_path(@soccer_field),
+                                       method: :delete, data: { confirm: t(".you_sure") },
+                                       class:"btn btn-danger py-3 px-4 mr-3" %>
+    </p>
+  </div>
+  <div class="col-lg-7 ml-auto">
+    <%= image_tag @soccer_field.display_image if @soccer_field.image.attached? %>
+  </div>
+</div>
