@@ -17,4 +17,12 @@ class ApplicationController < ActionController::Base
   end
 
   def check_role_user; end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t(".login_require")
+    redirect_to login_url
+  end
 end

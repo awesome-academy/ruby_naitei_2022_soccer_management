@@ -19,8 +19,8 @@ User.create!(name: "Example User",
                activated_at: Time.zone.now)
 end
 for n in 1..30
-  SoccerField.create!(name: "Thong nhat Station",
-              address: "Ha Noi",
+  SoccerField.create!(name: Faker::Name.name,
+              address: Faker::Name.name + " - " + Faker::Name.name,
               field_type: 1,
               rate: 1,
               hour_price: 1,

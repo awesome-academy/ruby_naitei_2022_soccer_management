@@ -156,7 +156,31 @@ en:
   soccer_fields:
     show:
       not_found: "Not found user"
+      detail: "Detail"
+      order_form: "Order form"
+      login_require: "Please login"
+      ordered: "Ordered"
+    index:
+      name: "Name"
+      address: "Address"
+      filter: "Filter"
   models:
     soccer_field:
       valid_format: "must be a valid image format"
       should_less_than: "should be less than 5MB"
+  soccer_field_orders:
+    create:
+      success: "Create Successful"
+      error: "Create fail"
+    index:
+      time_start: "Time start"
+      time_finish: "Time finish"
+      submit: "Register"
+    validate:
+      start_time: "Time start invalid"
+      finish_time: "Time finish invalid"
+    new:
+      time_start: "Time start"
+      time_finish: "Time finish"
+      submit: "Submit"
+      confirm: "Are you sure?"

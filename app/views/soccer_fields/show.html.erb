@@ -1,5 +1,6 @@
 <div class="container site-section">
       <div class="row">
+        <h3><%= t ".detail" %></h3>
         <div class="col-lg-6">
           <div class="custom-media d-flex">
             <div class="mr-4">
@@ -8,8 +9,21 @@
             <div class="text">
               <h3><%= link_to @soccer_field.name, soccer_field_path %></h3>
               <p><%= @soccer_field.address %></p>
+              <h4><%= t ".ordered" %></h4>
+              <% @soccer_field.soccer_field_orders.each do |soccer_field_order| %>
+              <li>
+                <%= soccer_field_order.time_start.strftime("%H:%M - %d/%m") %>
+                <%= "~" %>
+                <%= soccer_field_order.time_finish.strftime("%H:%M - %d/%m") %>
+              </li>
+              <% end %>
             </div>
           </div>
         </div>
+      </div>
+      <hr>
+      <div class="row">
+        <h3><%= t ".order_form" %></h3>
+        <%= render "soccer_field_orders/new", soccer_field_order: @soccer_field_order %>
       </div>
     </div>
