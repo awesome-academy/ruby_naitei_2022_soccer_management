@@ -48,7 +48,7 @@ vi:
         success: "Cập nhật thành công"
         failed: "Cập nhật không thành công"
       destroy:
-        success: "Xóa không thành công"
+        success: "Xóa thành công"
         failed: "Xóa không thành công"
       edit:
         title: "Chỉnh sửa"
@@ -76,6 +76,20 @@ vi:
         you_sure: "Bạn chắc chắn chứ?"
       index:
         title: "Danh sách sân bóng"
+    soccer_field_orders:
+      index:
+        title: "Danh sách đơn đặt sân"
+        id: "ID"
+        user_id: "ID người dùng"
+        soccer_field_id: "ID sân bóng"
+        time_start: "Giờ bắt đầu"
+        time_finish: "Giờ kết thúc"
+        price: "Chi phí"
+        created_at: "Ngày tạo"
+        actions: "Hành động"
+      soccer_field_order:
+        approve: "Chấp nhận"
+        delete: "Xóa"
   layouts:
     header:
       english: "Tiếng anh"

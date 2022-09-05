@@ -76,6 +76,20 @@ en:
         you_sure: "You sure?"
       index:
         title: "List of soccer fields"
+    soccer_field_orders:
+      index:
+        title: "List of orders"
+        id: "ID"
+        user_id: "User ID"
+        soccer_field_id: "Soccer field ID"
+        time_start: "Start time"
+        time_finish: "Finish time"
+        price: "Price"
+        created_at: "Created at"
+        actions: "Actions"
+      soccer_field_order:
+        approve: "Approve"
+        delete: "Delete"
   layouts:
     header:
       english: "English"

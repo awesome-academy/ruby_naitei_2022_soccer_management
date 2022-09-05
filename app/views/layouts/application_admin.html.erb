@@ -22,9 +22,9 @@
         <div class="container-fluid">
             <div class="row" id="main" >
                 <div class="col-sm-12 col-md-12 well" id="content">
-                    <% flash.each do |message_type, message| %>
-                      <div class="alert alert-<%= message_type %>"><%= message %></div>
-                    <% end %>
+                  <% flash.each do |message_type, message| %>
+                    <div class="alert alert-<%= message_type %>"><%= message %></div>
+                  <% end %>
                   <%= yield %>
                 </div>
             </div>

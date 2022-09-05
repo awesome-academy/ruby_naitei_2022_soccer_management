@@ -11,6 +11,7 @@ image:
   accept_path: "image/jpeg, image/gif, image/png"
 pagy:
   soccer_fields: 10
+  soccer_field_orders: 10
 regex:
   email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 valid:
@@ -40,9 +41,10 @@ soccer_field_order:
   rent_time_max: 4
   rent_time_step: 1
   rent_time_default: 1
-
-
 validates:
   soccer_field:
     name_max_length: 50
     address_max_length: 150
+name_max_length: 50
+address_max_length: 150
+date_format: "%Y-%m-%d %H:%M"

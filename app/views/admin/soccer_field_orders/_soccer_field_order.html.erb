@@ -1,0 +1,13 @@
+<tr>
+  <th><%= soccer_field_order.id %></th>
+  <td><%= soccer_field_order.user_id %></td>
+  <td><%= soccer_field_order.soccer_field_id %></td>
+  <td><%= soccer_field_order.time_start.strftime(Settings.date_format) %></td>
+  <td><%= soccer_field_order.time_finish.strftime(Settings.date_format) %></td>
+  <td><%= soccer_field_order.price %></td>
+  <td><%= soccer_field_order.created_at.strftime(Settings.date_format) %></td>
+  <td>
+    <%= link_to t(".approve"), "#", class: "btn btn-primary" %>
+    <%= link_to t(".delete"), "#" , method: :delete, class: "btn btn-danger", data: {confirm: t(".confirm")} %>
+  </td>
+</tr>

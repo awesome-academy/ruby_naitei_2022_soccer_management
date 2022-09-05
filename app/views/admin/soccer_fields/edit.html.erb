@@ -19,7 +19,7 @@
                                       step: Settings.soccer_field.price_step,
                                       :value => Settings.soccer_field.price_default, class: "form-control" %>
       <%= f.label :image, t(".image") %>
-      <% if f.object.image.to_s.empty? %>
+      <% if f.object.image.blank? %>
         <%= f.file_field :image, accept: Settings.image.accept_path, class: "form-control" %>
       <% else %>
         <%= image_tag @soccer_field.display_preview_image, class: "d-block"%>
