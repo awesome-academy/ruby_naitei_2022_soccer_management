@@ -31,6 +31,14 @@ class User < ApplicationRecord
     end
   end
 
+  def admin?
+    role == 1
+  end
+
+  def user?
+    role.zero?
+  end
+
   def remember
     self.remember_token = User.new_token
     update remember_digest: User.digest(remember_token)

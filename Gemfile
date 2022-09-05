@@ -8,6 +8,7 @@ gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "bootstrap-sass", "3.4.1"
 gem "config"
+gem "faker", "2.22.0"
 gem "figaro"
 gem "image_processing", "1.12.2"
 gem "jbuilder", "~> 2.7"

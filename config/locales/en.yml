@@ -95,12 +95,31 @@ en:
   users:
     new:
       heading: "Sign up"
-      form:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirm: "Password confirmation"
-        create: "Create my account"
+      create: "Create my account"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Password confirmation"
+    edit:
+      edit: "Edit user"
+      save_changes: "Save changes"
+      intro: "Update your profile"
+      danger: "Please log in."
+      incorrect_user: "Incorrect user"
+      change: "Change"
+    update:
+      update_success: "Profile updated"
+      update_fail: "Update failed"
+    index:
+      index_title: "All users"
+    destroy:
+      user_deleted: "User deleted"
+      delete_fail: "User delete fail"
+      incorrect_admin: "Incorrect admin"
+    user:
+      delete: "delete"
+      comfirm : "You sure?"
     show:
       user_not_found: "User not found"
     create:

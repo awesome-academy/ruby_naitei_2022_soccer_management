@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
   def login user
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 
   private
@@ -27,7 +27,11 @@ class SessionsController < ApplicationController
     if user.activated
       log_in user
       params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-      redirect_back_or user
+      if user.role.zero?
+        redirect_to root_url
+      else
+        redirect_to admin_root_url
+      end
     else
       flash[:warning] = t(".account_not_actived")
       redirect_to root_path

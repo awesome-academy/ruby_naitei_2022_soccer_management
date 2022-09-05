@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale, :check_role_user
   protect_from_forgery with: :exception
   include SessionsHelper
+
   before_action :set_locale
 
   private
